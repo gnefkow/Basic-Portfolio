@@ -1,0 +1,132 @@
+/* Later, make sure to add the "text-decoration" and "list-style"  to my notes!! */
+* {
+  margin:  0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+h1, h2, h3, p, li {
+  font-family: 'Lato', sans-serif;
+  color: #444;
+}
+
+
+
+/* HEADER BAR */
+/* HEADER BAR */
+
+.header {
+  width: 100%;
+  height: 4em;
+  display: block;
+  background-color: #FFFFFF;
+}
+
+.innerHeader {
+  width: 90%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.logoContainer {
+  height: 100%;
+  display:  table;
+  float: left;
+}
+
+.logoContainer h1 {
+  color: #222;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.logoContainer h1:hover {
+  color: #999; 
+}
+
+.headerBarButtons {
+  float: right;
+  height: 100%;
+}
+
+.headerBarButtons a {
+  display: table;
+  float: left;
+  height: 100%;
+  padding: 0px 20px;
+}
+
+.headerBarButtons a:visited {
+  color: #222;
+}
+
+.headerBarButtons a:hover {
+  color: #999;
+}
+
+.headerBarButtons a li{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* FOOTER */
+/* FOOTER */
+
+.footer {
+  background-color: #F5F5F5;
+  color: #737373;
+  width: 100%;
+  padding: 1em 0;
+}
+
+.innerFooter {
+  width: 80%;
+}
+
+.footerNavTab {
+  display: block;
+}
+
+.footerNavTab-btn {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+/* BODY ELEMENTS */
+/* BODY ELEMENTS */
+
+
+
+.imgFullBleed-Header img{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bodyText {
+display: block;
+width: 80%;
+margin-left:  auto;
+margin-right: auto;
+padding: 2em 0 2em 0;
+}
+
+.bodyText p, h2{
+  margin-bottom: .5em;
+}
+
+.bodyText a:visited{
+  color: #222;
+}
+
+.bodyText a{
+  border-bottom: solid #999 2px;
+}
+
+.bodyText a:hover{
+  border-bottom: solid #222 4px;
+  color: black;
+}
