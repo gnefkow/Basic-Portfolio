@@ -130,3 +130,9 @@ padding: 2em 0 2em 0;
   border-bottom: solid #222 4px;
   color: black;
 }
+
+.bulletList li{
+  list-style-type: circle;
+  margin-left: 2em;
+  line-height: 1.5em;
+}
