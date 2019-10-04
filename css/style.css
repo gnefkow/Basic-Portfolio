@@ -205,4 +205,18 @@ padding: 2em 0 2em 0;
   box-shadow:         2px 2px 7px 0px rgba(50, 50, 50, 0.6);
 }
 
+.socialBlock {
+  display: table;
+  width: 100%;
+}
 
+.socialIcons {
+  display: table-cell;
+  float: left;
+  height: 1.5em;
+  width: 1.5em;
+  padding: 1em;
+  border-radius: 1.75em;
+  border: 1px  solid #222;
+  margin: 1em;
+}
