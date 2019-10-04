@@ -29,14 +29,25 @@
   </div>
 
   <div ID="Form">
-    <p class="formLabel">Your Name</p>
-    <input type="text" id="contactName" name="contact_name" value="Whats your name?" >
+
+      <div class="form">
+        <input type="text" name="contactName" autocomplete="off" required>
+          <label class="labelName">
+            <span class="contentName">YOUR NAME</span>
+          </label>
+      </div>
+
+      <div class="form">
+          <input type="email" name="contactEmail" autocomplete="off" required>
+            <label class="labelName">
+              <span class="contentName">YOUR EMAIL</span>
+            </label>
+        </div>
+
     <br>
-    <p class="formLabel">Email Address:</p>
-    <input type="email" id="contactEmail" name="contact_email"  value="What's your email?" >
-    <br>
+  
     <p class="formLabel">Message</p>
-    <textarea rows="4" cols="50">
+    <textarea class="inputBox" rows="4" cols="50" >
         What do you want to chat about?
         </textarea>
     <br>
@@ -47,7 +58,7 @@
 
 
   <!-- TEMP FOOTER NAV-->
-  <div class="footer">
+  <footer>
       <div class="innerFooter">
        <ul class="footerNavTab">
          <a href="about.html"><li class="footerNavTab-btn">about.</li></a>
@@ -56,6 +67,6 @@
        </ul>
        <div><p>Copyright: Kyle Becker, 2019</p></div>
      </div>
-   </div>
+    </footer>
 
 </body>

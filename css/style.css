@@ -75,7 +75,7 @@ h1, h2, h3, p, li {
 /* FOOTER */
 /* FOOTER */
 
-.footer {
+footer {
   background-color: #F5F5F5;
   color: #737373;
   width: 100%;
@@ -97,8 +97,6 @@ h1, h2, h3, p, li {
 
 /* BODY ELEMENTS */
 /* BODY ELEMENTS */
-
-
 
 .imgFullBleed-Header img{
   width: 100%;
@@ -123,6 +121,7 @@ padding: 2em 0 2em 0;
 }
 
 .bodyText a{
+  color: #222;
   border-bottom: solid #999 2px;
 }
 
@@ -136,3 +135,74 @@ padding: 2em 0 2em 0;
   margin-left: 2em;
   line-height: 1.5em;
 }
+
+/* FORMS */
+/* FORMS */
+
+.form {
+  font-family: 'Lato', sans-serif;
+  position: relative; /*need this so we can mess with the position of our label*/
+  width: 100%;
+  margin: 2.5em 0 1.5em 0;
+}
+
+.form input {
+  height: 3em;
+  width: 100%;
+  /* padding-top: 1.5em; delete this in a minute, and  then fix it*/
+  border: none;
+  outline: none;
+  background-color:blue;
+  border-radius: 1.5em;
+  color:#222;
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.15);
+  -moz-box-shadow:    1px 1px 5px 0px rgba(50, 50, 50, 0.15);
+  box-shadow:         1px 1px 5px 0px rgba(50, 50, 50, 0.15);
+}
+
+.form label {
+  position: absolute; /*this is why we added 'relative' to the form*/
+  bottom: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  pointer-events: none; /*makes it to where it doesn't block the click*/
+  color:  white;
+}
+
+.form label::after {
+  content: ""; /*this just has to be there. Add something in the quotes and it will show*/
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.contentName { /*This is just the text of the label. EEnables us to move it independently*/
+  position: absolute;
+  bottom: .6em;
+  left: .25em;
+  transition: all 0.5s ease;
+}
+
+.form input:focus + .labelName .contentName,
+.form input:valid + .labelName .contentName{
+  /*We're able to use the '+' sign because in the html the 'contentName' is BELOW the 'form'*/
+  transform: translateY(-4em);
+  font-weight: 900;
+  font-size: .6em;
+  color: blue;
+}
+
+.form input:focus,
+.form input:valid {
+  height: 2em;
+  background-color: white;
+  border-radius:  6px;
+  padding-left: 1em;
+  font-size: 1.1em;
+  -webkit-box-shadow: 2px 2px 7px 0px rgba(50, 50, 50, 0.6);
+  -moz-box-shadow:    2px 2px 7px 0px rgba(50, 50, 50, 0.6);
+  box-shadow:         2px 2px 7px 0px rgba(50, 50, 50, 0.6);
+}
+
+
