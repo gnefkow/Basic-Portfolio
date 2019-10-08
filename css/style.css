@@ -108,6 +108,11 @@ footer {
   padding-bottom: 1em;
 }
 
+.footerCopyrightText{
+  font-size: .8em;
+  color: #aaa;
+}
+
 /* BODY ELEMENTS */
 /* BODY ELEMENTS */
 
@@ -256,7 +261,6 @@ padding: 2em 0 2em 0;
 }
 
 .textBox {
-
 }
 
 .socialBlock {
@@ -273,6 +277,13 @@ padding: 2em 0 2em 0;
   border-radius: 1.75em;
   border: 1px  solid #222;
   margin: 1em 1em 1em 0;
+}
+
+.socialIcons:hover{
+  border: 1px  solid #fff;
+  -webkit-box-shadow: 2px 2px 7px 0px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow:    2px 2px 7px 0px rgba(50, 50, 50, 0.3);
+  box-shadow:         2px 2px 7px 0px rgba(50, 50, 50, 0.3);
 }
 
 
@@ -310,6 +321,7 @@ padding: 2em 0 2em 0;
 
 #splashNav li:hover {
   color: #666;
+  border-left: solid 8px #D93A26;
 }
 
 #secretButton{
