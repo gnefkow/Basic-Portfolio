@@ -1,4 +1,6 @@
 /* Later, make sure to add the "text-decoration" and "list-style"  to my notes!! */
+html {font-size: 62.5%;}
+
 * {
   margin:  0;
   padding: 0;
@@ -17,8 +19,20 @@ h1, h2, h3, h4, p, li {
   color: #444;
 }
 
-p {
-  font-size: 1em;
+h2 {
+  font-size: 2.2em;
+  margin-top: 2em;
+  line-height: 2;
+}
+
+h3 {
+  font-size: 1.8em;
+  margin-top: 1.8em;
+  line-height: 2;
+}
+p, li{
+  font-size: 1.7em;
+  line-height: 2;
 }
 
 /* HEADER BAR */
@@ -26,7 +40,7 @@ p {
 
 .header {
   width: 100%;
-  height: 4em;
+  height: 5em;
   display: block;
   background-color: #FFFFFF;
   -webkit-box-shadow: 1px 1px 1px 0px rgba(50, 50, 50, 0.15);
@@ -67,7 +81,7 @@ p {
   display: table;
   float: left;
   height: 100%;
-  padding: 0px 20px;
+  padding: 0px .8em;
 }
 
 .headerBarButtons a:visited {
@@ -124,7 +138,7 @@ footer {
 
 .bodyText {
 display: block;
-width: 80%;
+width: 85%;
 margin-left:  auto;
 margin-right: auto;
 padding: 2em 0 2em 0;
@@ -287,10 +301,9 @@ padding: 2em 0 2em 0;
 }
 
 
-/* SPLASH PAGE */
+/* SPLASH PAGE (MOBILE) */
 .leftDoor {
   float: left;
-  
   width: 60%;
   height: 80em;
 }
@@ -300,22 +313,28 @@ padding: 2em 0 2em 0;
   width: 50%;
   left: 5%;
   bottom: 25%;
+
 }
 
+#nameLockup h1 {
+  font-size: 2.5em;
+}
+
+
 .splashSubText {
-  font-size: .85em;
+  font-size: 1.2em;
 }
 
 #splashMenuLockup {
   position: fixed;
-  bottom: 15%;
-  right: 20%;
+  bottom: 10%;
+  right: 15%;
 }
 
 #splashNav li {
   padding: .5em  0 .5em 2em;
   color: #222;
-  font-size: 1.2em;
+  font-size: 1.75em;
   font-weight: 900;
 }
 

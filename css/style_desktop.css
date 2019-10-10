@@ -1,0 +1,42 @@
+/* MEDIA QUERIES - for DESKTOP WEB */
+
+@media (min-width: 450px) {
+  .header {
+    height: 7em;
+  }
+  
+  .headerBarButtons a {
+    padding: 0px 1.5em;
+  }
+ 
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3em;
+}
+p, li {
+  font-size: 2em;
+}
+
+  .bodyText {
+    width: 65%;
+  }
+  
+ #nameLockup h1 { 
+  font-size: 3em;
+}
+
+.splashSubText {
+  font-size: 2em;
+}
+
+}
+
+/* MEDIA QUERIES - for TINY PHONE */
+@media (max-width: 350px) {
+.headerBarButtons a {
+  padding: 0px 10px;
+  font-size: 1em;
+}
