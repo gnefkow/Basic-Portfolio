@@ -17,7 +17,7 @@ h2 {
   font-size: 3em;
 }
 p, li {
-  font-size: 2em;
+  font-size: 1.7em;
 }
 
   .bodyText {
@@ -35,8 +35,9 @@ p, li {
 }
 
 /* MEDIA QUERIES - for TINY PHONE */
-@media (max-width: 350px) {
+/* @media (max-width: 350px) {
 .headerBarButtons a {
   padding: 0px 10px;
   font-size: 1em;
-}
+} */
+

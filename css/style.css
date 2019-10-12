@@ -5,7 +5,6 @@ html {font-size: 62.5%;}
   padding: 0;
   list-style: none;
   text-decoration: none;
-  
   font: inherit;
   vertical-align: baseline;
 }
@@ -36,6 +35,11 @@ p, li{
   font-size: 1.7em;
   line-height: 2;
 }
+
+::selection {
+  background-color: red;
+  color: #ffffff;
+  } 
 
 
 /* HEADER BAR */
@@ -116,18 +120,51 @@ footer {
   margin-right: auto;
 }
 
-.footerNavTab {
-  display: block;
+footer h3{
+  margin-top: 1em;
+  font-weight: 900;
+  font-size: 1.5em;
 }
 
+.footerNavTab {
+  margin-bottom: 2em;
+}
+
+/* .footerBlock {
+  background-color: orange;
+  border: 1px black solid;
+} */
+
 .footerNavTab-btn {
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-left: 1em;
+  margin-left: -1em;
+}
+
+.footerNavTab-btn:hover {
+  border-radius: .75em;
+  -webkit-box-shadow: 1px 1px 15px 0px rgba(50, 50, 50, 0.10);
+  -moz-box-shadow:    1px 1px 15px 0px rgba(50, 50, 50, 0.10);
+  box-shadow:         1px 1px 15px 0px rgba(50, 50, 50, 0.10);
+}
+
+.footerNavTab-btn:active {
+  border-radius: .75em;
+  
+  transform: rotate(1deg);
+  -webkit-box-shadow: 1px 1px 15px 0px rgba(50, 50, 50, 0.10);
+  -moz-box-shadow:    1px 1px 15px 0px rgba(50, 50, 50, 0.10);
+  box-shadow:         1px 1px 15px 0px rgba(50, 50, 50, 0.10);
 }
 
 .footerCopyrightText{
-  font-size: .8em;
+  font-size: 1.2em;
   color: #aaa;
+}
+
+.fabFooter {
+  margin-right: 1em;
 }
 
 /* BODY ELEMENTS */
@@ -288,9 +325,10 @@ padding: 2em 0 2em 0;
 .socialIcons {
   display: table-cell;
   float: left;
-  height: 1em;
-  width: 1em;
-  padding: 1em;
+  height: 3em;
+  width: 3em;
+  text-align: center;
+  padding: .5em 1em 1em 1em;
   border-radius: 1.75em;
   border: 1px  solid #222;
   margin: 1em 1em 1em 0;
@@ -335,7 +373,7 @@ padding: 2em 0 2em 0;
 }
 
 #splashNav li {
-  padding: .5em  0 .5em 2em;
+  padding: .5em  2em .5em 2em;
   color: #222;
   font-size: 1.75em;
   font-weight: 900;
@@ -352,6 +390,30 @@ padding: 2em 0 2em 0;
   height: 40px;
   width: 80px;
   top: 100px;
+}
+
+/* HOMEWORK MARKER  */
+/* This can be deleted after the assignment gets graded - its 
+just there to help  point out where the HW assignment for week 1 is located. */
+#homeworkButton {
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    color: #222;
+  }
+  50% {
+    color: #D93A26;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.3);
+    -moz-box-shadow:    1px 1px 5px 0px rgba(50, 50, 50, 0.3);
+    box-shadow:         1px 1px 5px 0px rgba(50, 50, 50, 0.3);
+
+  }
+
+  100% {
+    color: #222;
+  }
 }
 
 /* PROJECT BOX */

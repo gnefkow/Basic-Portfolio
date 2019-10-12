@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <head>
 
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/style_desktop.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,900&display=swap" rel="stylesheet"> 
-  <script src="https://kit.fontawesome.com/ead9e1b81c.js" crossorigin="anonymous"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style_desktop.css">
+    <script src="https://kit.fontawesome.com/ead9e1b81c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap" rel="stylesheet"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </head>
 
@@ -75,29 +81,47 @@
 </div>
 
 
-  <!-- TEMP FOOTER NAV-->
- <footer>
-    <div class="innerFooter">
-     <ul class="footerNavTab">
-       <h4>Pages.</h4>
-       <a href="about.html"><li class="footerNavTab-btn">about.</li></a>
-       <a href="portfolio.html"><li class="footerNavTab-btn">work.</li></a>
-       <a href="contact.html"><li class="footerNavTab-btn">contact.</li></a>
-       <a href="homework/homework.html"><li class="footerNavTab-btn">homework.</li></a>
-       <li>
-        <div class="socialBlock">
-            <h4>Social.</h4>
+<!-- TEMP FOOTER NAV-->
+<footer>
+    <div class="innerFooter container">
+      <div class="row">
+        <div class="footerBlock col-md-3">
+            <h3>Pages.</h3>
           <ul>
-            <a href="https://www.linkedin.com/in/kyle-becker-44132223/" target="_blank"><li class="socialIcons"><i class="fab fa-linkedin-in"></i></li></a>
-            <a href="https://github.com/gnefkow/Basic-Portfolio/commits?author=gnefkow" target="_blank"><li class="socialIcons"><i class="fab fa-github-alt"></i></li></a>
-            <a href="mailto:gnefkow87@gmail.com" target="_blank"><li class="socialIcons"><i class="far fa-envelope"></i></li></a>
-            <a href="https://www.instagram.com/kyle.becker2/" target="_blank"><li class="socialIcons"><i class="fab fa-instagram"></i></li></a>
-          </ul>
+              <a href="about.html"><li class="footerNavTab-btn">about.</li></a>
+              <a href="portfolio.html"><li class="footerNavTab-btn">work.</li></a>
+              <a href="contact.html"><li class="footerNavTab-btn">contact.</li></a>
+              <a href="homework/homework.html"><li class="footerNavTab-btn">homework.</li></a>
+            </ul>
         </div>
-       </li>
-     </ul>
-     <div><p class="footerCopyrightText">Copyright: Kyle Becker, 2019</p></div>
-   </div>
-  </footer>
+        <div class="footerBlock socialBlock col-md-3">
+            <h3>Social.</h3>
+            <ul>
+              <a href="https://www.linkedin.com/in/kyle-becker-44132223/" target="_blank"><li class="footerNavTab-btn"><i class="fab fabFooter fa-linkedin-in"></i>Linkedin</li></a>
+              <a href="https://github.com/gnefkow/Basic-Portfolio/commits?author=gnefkow" target="_blank"><li class="footerNavTab-btn"><i class="fab fabFooter fa-github-alt"></i>Github</li></a>
+              <a href="mailto:gnefkow87@gmail.com" target="_blank"><li class="footerNavTab-btn"><i class="far fabFooter fa-envelope"></i>email</li></a>
+              <a href="https://www.instagram.com/kyle.becker2/" target="_blank"><li class="footerNavTab-btn"><i class="fab fabFooter fa-instagram"></i>instagram</li></a>
+            </ul>
+          </div>
+        <div class="footerBlock col-md-3">
+          <h3>More of Kyle's Stuff</h3>
+          <ul>
+              <a target="_blank" href="http://portfolio.gnefkow.com" ><li class="footerNavTab-btn">Design</li></a>
+              <a target="_blank" href="http://photography.gnefkow.com"><li class="footerNavTab-btn">Photography</li></a>
+              <a target="_blank" href="http://knowledgeinsociety.com"><li class="footerNavTab-btn">Personal Blog</li></a>
+              <a target="_blank" href="http://jargogle.io"><li class="footerNavTab-btn">Narrative Design</li></a>
+            </ul>
+        </div>
+
+        <div class="footerBlock col-md-3">
+      </div>
+    </div>
+
+    <div class="row">
+        <p class="footerCopyrightText">Copyright: Kyle Becker, 2019</p>
+    </div>
+    
+  </div>
+</footer>
 
 </body>
