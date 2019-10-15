@@ -9,13 +9,63 @@ html {font-size: 62.5%;}
   vertical-align: baseline;
 }
 
+/* BOOTSTRAP OVERRIDES */
+/* BOOTSTRAP OVERRIDES */
+.card a {
+  border: 0px solid white !important;
+}
+
+a:hover {
+  text-decoration: none;
+  border: none;
+}
+
+.row {
+  padding: 0;
+}
+
+/*BOOTSTRAP CARD OVERRIDES*/
+.card{
+  border: none;
+  margin-right: 2em;
+  margin-bottom: 2em;
+  -webkit-box-shadow: 1px 1px 6px 0px rgba(50, 50, 50, 0.15);
+  -moz-box-shadow:    1px 1px 6px 0px rgba(50, 50, 50, 0.15);
+  box-shadow:         1px 1px 6px 0px rgba(50, 50, 50, 0.15);
+}
+
+.card:hover{
+  -webkit-box-shadow: 2px 2px 15px 0px rgba(50, 50, 50, 0.2);
+  -moz-box-shadow:    2px 2px 15px 0px rgba(50, 50, 50, 0.2);
+  box-shadow:         2px 2px 15px 0px rgba(50, 50, 50, 0.2);
+  border-bottom: 0px;
+}
+ 
+.card-title {
+  font-size: 2em;
+  line-height: 1.2;
+  padding-bottom: .2em;
+}
+
+.card-subtitle {
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+.card-text {
+  font-size: 1.3em;
+  color: #333;
+}
+
+
+/* Normal Stuff*/
 .clearfix::after {
   content: ""; 
   display: block;
   clear: both;
   }
 
-h1, h2, h3, h4, p, li {
+h1, h2, h3, h4, h5, h6, p, li {
   font-family: 'Lato', sans-serif;
   color: #444;
 }
@@ -40,6 +90,7 @@ p, li{
   background-color: red;
   color: #ffffff;
   } 
+
 
 
 /* HEADER BAR */
@@ -188,16 +239,16 @@ padding: 2em 0 2em 0;
   margin-bottom: .5em;
 }
 
-.bodyText a:visited{
+.bodyText-a:visited{
   color: #222;
 }
 
-.bodyText a{
+.bodyText-a{
   color: #222;
   border-bottom: solid #999 2px;
 }
 
-.bodyText a:hover{
+.bodyText-a:hover{
   border-bottom: solid #222 4px;
   color: black;
 }
