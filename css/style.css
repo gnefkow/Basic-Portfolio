@@ -24,6 +24,19 @@ a:hover {
   padding: 0;
 }
 
+.btn {
+  font-size: 1.7em;
+}
+
+.btn:hover{
+  -webkit-box-shadow: 1px 1px 6px 0px rgba(50, 50, 50, 0.15);
+  -moz-box-shadow:    1px 1px 6px 0px rgba(50, 50, 50, 0.15);
+  box-shadow:         1px 1px 6px 0px rgba(50, 50, 50, 0.15);
+}
+
+/* BOOTSTRAP NAVBAR OVERRIDES */
+
+
 /*BOOTSTRAP CARD OVERRIDES*/
 .card{
   border: none;
@@ -72,7 +85,6 @@ h1, h2, h3, h4, h5, h6, p, li {
 
 h2 {
   font-size: 2.2em;
-  margin-top: 2em;
   line-height: 2;
 }
 
@@ -87,7 +99,7 @@ p, li{
 }
 
 ::selection {
-  background-color: red;
+  background-color: #D93A26;
   color: #ffffff;
   } 
 
@@ -95,6 +107,11 @@ p, li{
 
 /* HEADER BAR */
 /* HEADER BAR */
+
+.navbar {
+  padding: 2em;
+  background-color: #ffffff;
+}
 
 .header {
   width: 100%;
@@ -113,47 +130,6 @@ p, li{
   margin: 0 auto;
 }
 
-.logoContainer {
-  height: 100%;
-  display:  table;
-  float: left;
-}
-
-.logoContainer h1 {
-  color: #222;
-  height: 100%;
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.logoContainer h1:hover {
-  color: #999; 
-}
-
-.headerBarButtons {
-  float: right;
-  height: 100%;
-}
-
-.headerBarButtons a {
-  display: table;
-  float: left;
-  height: 100%;
-  padding: 0px .8em;
-}
-
-.headerBarButtons a:visited {
-  color: #222;
-}
-
-.headerBarButtons a:hover {
-  color: #999;
-}
-
-.headerBarButtons a li{
-  display: table-cell;
-  vertical-align: middle;
-}
 
 /* FOOTER */
 /* FOOTER */
@@ -180,11 +156,6 @@ footer h3{
 .footerNavTab {
   margin-bottom: 2em;
 }
-
-/* .footerBlock {
-  background-color: orange;
-  border: 1px black solid;
-} */
 
 .footerNavTab-btn {
   padding-top: .5em;
@@ -259,20 +230,7 @@ padding: 2em 0 2em 0;
   line-height: 1.5em;
 }
 
-.quoteBlock {
-  background-color: #eee;
-  font-size: 1.4em;
-  color: #222;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 2em;
-  padding-bottom: 2em;
-}
-#quoteText {
-  text-align: center;
-  margin-left: auto;
-  margin-right:  auto;
-}
+
 
 .marginImage {
   width: 80%;
@@ -287,6 +245,58 @@ padding: 2em 0 2em 0;
   margin-left: auto;
   margin-right: auto;
 }
+
+/* COLOR BANDS */
+.colorBand{
+  width: 100%;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.colorBandText {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.colorBand-primary {
+  background-color:#D93A26;
+}
+
+.colorBand-primary p, .colorBand-primary h3, .colorBand-primary h2, .colorBand-primary h1 {
+  color: #ffffff;
+}
+
+.btn-colorBandPrimary-primary{
+  background-color: #ffffff;
+  color: #D93A26;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.colorBand-tertiary {
+  background-color: #eee;
+  color: #222;
+}
+
+
+/* QUOTE BLOCK */
+.quoteBlock {
+  font-size: 1.4em;
+
+
+}
+.quoteText {
+  text-align: center;
+  margin-left: auto;
+  margin-right:  auto;
+}
+
+.quoteTextAuthor {
+  font-size: 1em;
+}
+
 
 /* FORMS */
 /* FORMS */
@@ -363,9 +373,6 @@ padding: 2em 0 2em 0;
   -webkit-box-shadow: 2px 2px 7px 0px rgba(50, 50, 50, 0.3);
   -moz-box-shadow:    2px 2px 7px 0px rgba(50, 50, 50, 0.3);
   box-shadow:         2px 2px 7px 0px rgba(50, 50, 50, 0.3);
-}
-
-.textBox {
 }
 
 .socialBlock {
@@ -467,6 +474,8 @@ just there to help  point out where the HW assignment for week 1 is located. */
   }
 }
 
+
+
 /* PROJECT BOX */
 /* PROJECT BOX */
 .projectSection {
@@ -515,4 +524,25 @@ just there to help  point out where the HW assignment for week 1 is located. */
   font-size: .8em;
 }
 
+/* CREDENTIALS CARD */
+.certCard {
+  background-color: inherit;
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  -moz-box-shadow:    0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow:         0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.certCard h5 {
+  font-size: 1em;
+  line-height: 1em;
+}
+
+.certCard p {
+  font-size: 1em;
+  line-height: .75em;
+}
+
+.cert-card-img {
+  width: 100%;
+}
 

@@ -1,6 +1,15 @@
 /* MEDIA QUERIES - for DESKTOP WEB */
 
-@media (min-width: 450px) {
+@media (min-width: 768px) {
+  .bodyText {
+    width: 90%;
+  }
+}
+
+
+
+/* FOR DESKTOP */
+@media (min-width: 980px) {
   .header {
     height: 7em;
   }
