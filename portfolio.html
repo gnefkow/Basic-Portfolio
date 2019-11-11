@@ -19,79 +19,119 @@
 <body>
 
 <!-- Main Header Nav-->
-<div class="header">
-    <div class="innerHeader">
-      <a href="index.html"><div class="logoContainer"><h1>KB</h1></div></a>
-      <ul class="headerBarButtons">
-        <a href="about.html"><li class="headerNavTab-btn">about.</li></a>
-        <a href="portfolio.html"><li class="headerNavTab-btn">work.</li></a>
-        <a href="contact.html"><li class="headerNavTab-btn">contact.</li></a>
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="index.html">KB</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+      <ul class="navbar-nav">
+        <a class="nav-link" href="about.html"><li class="nav-item navbar">about</li></a>
+        <a class="nav-link" href="portfolio.html"><li class="nav-item navbar active">work </li></a>
+        <a class="nav-link" href="contact.html"><li class="nav-item navbar">contact</li></a>
       </ul>
     </div>
-  </div>
+</nav>
 
   <!--CONTENT-->
   <div class="bodyText">
     <div class="projectSection" >
       <h2>work</h2>
       <p>This is all just placeholder for now. Soon, there will be an awesome  software development work here. In the meantime, maybe check out some <a class="bodyText-a" target="_blank" href="http://photography.gnefkow.com">photography</a> or <a class="bodyText-a" target="_blank" href="http://portfolio.gnefkow.com">UX design work?</a></p>
+      <div id=aboutAnchorButtons class="bodyText">
+          <ul class="liteButtons">
+            <a href="#codingProjects"><li >Coding Projects.</li></a>
+            <a href="#designProjects"><li>Design Projects</li></a>
+            <a href="#designProjects"><li>Photography</li></a>
+          </ul>
+        </div>
     </div>
+
+
     
-  <div class="container">
-    <div class="row col-md-12"><h2>Case Studies.</h2></div>
+  <div id="codingProjects" class="container">
+    <div class="row col-md-12">
+      <h2>Coding Projects.</h2>
+    </div>
 
     <div class="row  col-md-12">
-          <a href="https://gnefkow.github.io/FightRPG/"><div class="card" style="width: 24rem;">
-              <img src="images/fpo_image_1.png" class="card-img-top" alt="...">
+          <a href="https://gnefkow.github.io/FightRPG/" target="_blank"><div class="card" style="width: 24rem;">
+              <img src="images/project-images/Image_Sanders.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">2020 Election</h5>
+                <h5 class="card-title">Carnage Time!</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Javascript Game</h6>
-                <p class="card-text">Choose your candidate and enter the 2020 presedential race!.</p>
+                <p class="card-text">Choose your candidate and enter the 2020 presedential race!</p>
               </div>
           </div></a>
 
-          <a href="#"><div class="card" style="width: 24rem;">
-              <img src="images/fpo_image_2.png" class="card-img-top" alt="...">
+          <a href="https://gnefkow.github.io/TriviaGame/" target="_blank"><div class="card" style="width: 24rem;">
+              <img src="images/project-images/trivia-game.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">More to come...</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Org | Location</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">Ska Lyric Challenge</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Javascript Game</h6>
+                <p class="card-text">Can you finish the lyrics of these ska classics?</p>
               </div>
           </div></a>
+    </div>
+  </div>
 
-          <a href="#"><div class="card" style="width: 24rem;">
-              <img src="images/fpo_image_3.png" class="card-img-top" alt="...">
+<br>
+<br>
+<br>
+
+  <div id="designProjects" class="container">
+    <div class="row col-md-12">
+      <h2>Design Projects.</h2>
+    </div>
+    <div class="row col-md-12">
+      <p>Coming Soon!</p>
+    </div>
+  </div>
+
+<br>
+<br>
+<br>
+
+    <div id="designProjects" class="container">
+        <div class="row col-md-12">
+          <h2>Photography.</h2>
+        </div>
+        
+    <div class="row  col-md-12">
+          <a href="http://photography.gnefkow.com" target="_blank"><div class="card" style="width: 24rem;">
+              <img src="images/projects-photography/shanWoman.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                  <h5 class="card-title">More to come...</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Org | Location</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 class="card-title">Photography Portfolio</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Portfolio Website</h6>
+                  <p class="card-text">I've shot photos all over the world, check out my portfolio!</p>
                 </div>
             </div></a>
 
-          <a href="#"><div class="card" style="width: 24rem;">
-              <img src="images/fpo_image_4.png" class="card-img-top" alt="...">
+          <a href="http://photography.gnefkow.com/case-studies/lift-yoma-annual-report/" target="_blank"><div class="card" style="width: 24rem;">
+              <img src="images/projects-photography/yomaLiftReport.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                  <h5 class="card-title">More to come...</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Org | Location</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 class="card-title">Burmese Financing for Agriculture</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Yoma Bank & LIFT | Yangon, Myanmar</h6>
+                  <p class="card-text">I rode along to a Burmese tractor dealership to help LIFT with its anual report on Burmese agricultural financing.</p>
                 </div>
             </div></a>
 
-          <a href="#"><div class="card" style="width: 24rem;">
-              <img src="images/fpo_image_5.png" class="card-img-top" alt="...">
+          <a href="http://photography.gnefkow.com/events/lol-wild-card-i-semi-finals/" target="_blank"><div class="card" style="width: 24rem;">
+              <img src="images/projects-photography/riotWildCard.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                  <h5 class="card-title">More to come...</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Org | Location</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 class="card-title">League of Legends Wild-Card Tournament</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Riot Games | Mexico City</h6>
+                  <p class="card-text">Riot Games hired me in 2016 to shoot the Semi-Finals for their "Wildcard" tournament in Mexico City.</p>
                 </div>
             </div></a>
 
-          <a href="#"><div class="card" style="width: 24rem;">
-              <img src="images/fpo_image_1.png" class="card-img-top" alt="...">
+          <a href="http://photography.gnefkow.com/events/article-latam-jihn-release-event/" target="_blank"><div class="card" style="width: 24rem;">
+              <img src="images/projects-photography/riotJihn.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                  <h5 class="card-title">More to come...</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Org | Location</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 class="card-title">League of Legends Character Release Event</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Riot Games | Mexico City</h6>
+                  <p class="card-text">I documented the city-wide scavenger hunt and art-show that accompanied LoL's Jihn character release.</p>
                 </div>
             </div></a>
 
