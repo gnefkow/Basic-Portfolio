@@ -1,3 +1,6 @@
+$(document).ready(function(){
+
+console.log("I'm connected");
 $(".quoteBlock").on("click", function() {
 	var number = Math.floor((Math.random() * inspirationalQuotes.length));
   $("#quoteText").text(inspirationalQuotes[number])
@@ -25,3 +28,14 @@ var inspirationalQuotesAuthors = [
   /* 6 */ "Seneca", 
   /* 7 */ "Emiele Durkheim", 
 ]
+
+
+$(document).on('click', 'a[href^="#"]', function (event) {
+  event.preventDefault();
+
+  $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+  }, 500);
+});
+
+});

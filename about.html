@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+
     <title>About Kyle Becker.</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -9,8 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap" rel="stylesheet"> 
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
@@ -41,19 +44,19 @@
   </div>
 
 <div ID="aboutIntro" class="bodyText">
-  <h2>about me.</h2>
+  <h2>Professional Profile.</h2>
   <hr>
   <p>I’m Kyle. I’m a digital designer, developer, and product strategist based in New York City. I’m obsessed with the journey between research insight and product creation, so I’ve learned a lot about design research, agile software teams and lean business model development.</p>
 </div>
 
-<div id=aboutAnchorButtons class="bodyText">
+<div id="aboutAnchorButtons" class="bodyText">
   <ul class="liteButtons">
-    <a href="#professionalHighlights"><li >Professional Highlights.</li></a>
-    <a href="#certifications"><li>Degrees & Certifications.</li></a>
-    <a href="#aboutWhatIDo"><li>What I do.</li></a>
-    <a href="#aboutWhyIDo"><li>Why I do what I do.</li></a>
-    <a href="#aboutInterestingThings"><li>Interesting things about me.</li></a>
-    <a href="#aboutWhereIWrite"><li>Where I Write.</li></a>
+    <a href="#professionalHighlights" class="anchorButton"><li >Professional Highlights.</li></a>
+    <a href="#certifications" class="anchorButton"><li>Degrees & Certifications.</li></a>
+    <a href="#aboutWhatIDo" class="anchorButton"><li>What I do.</li></a>
+    <a href="#aboutWhyIDo" class="anchorButton"><li>Why I do what I do.</li></a>
+    <a href="#aboutInterestingThings" class="anchorButton"><li>Interesting things about me.</li></a>
+    <a href="#aboutWhereIWrite" class="anchorButton"><li>Where I Write.</li></a>
   </ul>
 </div>
 
@@ -91,27 +94,28 @@
     <div class="row">
       <div class="col-md-6">
         <ul class="cert">
+
           <li><!--MBA DEGREE-->
-            <div class="card mb-3 certCard" style="max-width: 540px;">
-              <div class="row no-gutters">
+            <div class="certCard" style="max-width: 540px;">
+              <div class="row">
                 <div class="col-md-2 col-sm-2 col-xs-2">
-                  <img src="images/logos/Logo_Illinois.png" class="card-img cert-card-img" alt="...">
+                  <img src="images/logos/logo_illini.svg" class="" alt="...">
                </div>
                <div class="col-md-10 col-sm-10 col-xs-10">
-                 <div class="card-body">
-                  <h5 class="card-title">Masters of Business Administration</h5>
-                    <p class="card-text"><small class="text-muted">University of Illinois</small></p>
-                    <p class="card-text"><small class="text-muted">Graduation: 2021</small></p>
+                 <div class="">
+                  <h5 class="">Masters of Business Administration</h5>
+                    <p class=""><small class="text-muted">University of Illinois</small></p>
+                    <p class=""><small class="text-muted">Graduation: 2021</small></p>
                   </div>
                 </div>
               </div>
             </div></li>
 
             <li> <!--KU DEGREE-->
-                <div class="card mb-3 certCard" style="max-width: 540px;">
+                <div class="certCard" style="max-width: 540px;">
                   <div class="row no-gutters">
                     <div class="col-md-2 col-sm-2 col-xs-2">
-                      <img src="images/logos/Logo_Illinois.png" class="card-img cert-card-img" alt="...">
+                      <img src="images/logos/logo_ku.svg" class="card-img cert-card-img" alt="...">
                    </div>
                    <div class="col-md-10 col-sm-10 col-xs-10">
                      <div class="card-body">
@@ -128,10 +132,10 @@
       <div class="col-md-6">
           <ul class="cert">
               <li> <!--FULL STACK DEV-->
-                <div class="card mb-3 certCard" style="max-width: 540px;">
+                <div class="certCard" style="max-width: 540px;">
                   <div class="row no-gutters">
                     <div class="col-md-2 col-sm-2 col-xs-2">
-                      <img src="images/logos/Logo_Illinois.png" class="card-img cert-card-img" alt="...">
+                      <img src="images/logos/logo_UPenn.svg" class="card-img cert-card-img" alt="...">
                    </div>
                    <div class="col-md-10 col-sm-10 col-xs-10">
                      <div class="card-body">
@@ -144,14 +148,15 @@
                 </div></li>
 
               <li> <!--PRODUCT OWNER-->
-                <div class="card mb-3 certCard" style="max-width: 540px;">
+                <div class="certCard" style="max-width: 540px;">
                   <div class="row no-gutters">
                     <div class="col-md-2 col-sm-2 col-xs-2">
-                      <img src="images/logos/Logo_Illinois.png" class="card-img cert-card-img" alt="...">
+                      <img src="images/logos/logo_scrumorg.svg" class="card-img cert-card-img" alt="...">
                    </div>
                    <div class="col-md-10 col-sm-10 col-xs-10">
                      <div class="card-body">
-                      <h5 class="card-title">Professional Scrum Product Owner (PSPO I)</h5>
+                      <h5 class="card-title">Scrum Product Owner</h5>
+                      <p class="card-text"><small class="text-muted">PSPO I</small></p>
                         <p class="card-text"><small class="text-muted">Scrum.org</small></p>
                       </div>
                     </div>
@@ -159,14 +164,15 @@
                 </div></li>
                 
                 <li> <!--SCRUM MASTER-->
-                  <div class="card mb-3 certCard" style="max-width: 540px;">
+                  <div class="certCard" style="max-width: 540px;">
                     <div class="row no-gutters">
                       <div class="col-md-2 col-sm-2 col-xs-2">
-                        <img src="images/logos/Logo_Illinois.png" class="card-img cert-card-img" alt="...">
+                        <img src="images/logos/logo_scrumorg.svg" class="card-img cert-card-img" alt="...">
                      </div>
                      <div class="col-md-10 col-sm-10 col-xs-10">
                        <div class="card-body">
-                        <h5 class="card-title">Professional Scrum Master (PSM I)</h5>
+                        <h5 class="card-title">Scrum Master</h5>
+                        <p class="card-text"><small class="text-muted">PSM I</small></p>
                           <p class="card-text"><small class="text-muted">Scrum.org</small></p>
                         </div>
                       </div>
@@ -177,6 +183,27 @@
     </div>
   </div>
 </div>
+
+<div ID="aboutClients" class="bodyText">
+    <h2>Clients I've worked with</h2>
+    <hr>
+    <p>Through freelancing as an individual or as a consultant, I've had the pleasure to work with these companies.</p>
+    <img class="clientLogo" src="./images/clientLogos/Logo_square_250_121Giving.png">
+    <img class="clientLogo" src="./images/clientLogos/Logo_square_250_aia.png">
+    <img class="clientLogo" src="./images/clientLogos/Logo_square_250_ATT.png">
+    <img class="clientLogo" src="./images/clientLogos/Logo_square_250_Capital_One.png">
+    <img class="clientLogo" src="./images/clientLogos/Logo_square_250_Citrix.png">
+    <img class="clientLogo" src="./images/clientLogos/Logo_square_250_Emerson.png">
+    <img class="clientLogo" src="./images/clientLogos/Logo_square_250_evcard.png">
+    <img class="clientLogo" src="./images/clientLogos/Logo_square_250_PetMate.png">
+    <img class="clientLogo" src="./images/clientLogos/Logo_square_250_PingUp.png">
+    <img class="clientLogo" src="./images/clientLogos/Logo_square_250_Siemens_Unify.png">
+    <img class="clientLogo" src="./images/clientLogos/Logo_square_250_SP_CapIQ.png">
+    <img class="clientLogo" src="./images/clientLogos/Logo_square_250_Stryker.png">
+    <img class="clientLogo" src="./images/clientLogos/Logo_square_250_WholeFoods.png">
+    <img class="clientLogo" src="./images/clientLogos/Logo_square_250_zap.png">
+
+  </div>
 
 <div ID="aboutWhatIDo" class="bodyText">
   <h2>what I  Do.</h2>
@@ -255,7 +282,7 @@
 <footer>
     <div class="innerFooter container">
       <div class="row">
-        <div class="footerBlock col-md-3">
+        <div class="footerBlock col-md-4">
             <h3>Pages.</h3>
           <ul>
               <a href="about.html"><li class="footerNavTab-btn">about.</li></a>
@@ -263,7 +290,7 @@
               <a href="contact.html"><li class="footerNavTab-btn">contact.</li></a>
             </ul>
         </div>
-        <div class="footerBlock socialBlock col-md-3">
+        <div class="footerBlock socialBlock col-md-4">
             <h3>Social.</h3>
             <ul>
               <a href="https://www.linkedin.com/in/kyle-becker-44132223/" target="_blank"><li class="footerNavTab-btn"><i class="fab fabFooter fa-linkedin-in"></i>Linkedin</li></a>
@@ -272,7 +299,7 @@
               <a href="https://www.instagram.com/kyle.becker2/" target="_blank"><li class="footerNavTab-btn"><i class="fab fabFooter fa-instagram"></i>instagram</li></a>
             </ul>
           </div>
-        <div class="footerBlock col-md-3">
+        <div class="footerBlock col-md-4">
           <h3>More of Kyle's Stuff</h3>
           <ul>
               <a target="_blank" href="http://portfolio.gnefkow.com" ><li class="footerNavTab-btn">Design</li></a>
@@ -281,23 +308,10 @@
               <a target="_blank" href="http://jargogle.io"><li class="footerNavTab-btn">Narrative Design</li></a>
             </ul>
         </div>
-
-        <div class="footerBlock col-md-3">
-          <h3>Extra Column</h3>
-          <ul>
-            <a target="_blank" href="#" ><li class="footerNavTab-btn">Because it</li></a>
-            <a target="_blank" href="#"><li class="footerNavTab-btn">just looks</li></a>
-            <a target="_blank" href="#"><li class="footerNavTab-btn">better with</li></a>
-            <a target="_blank" href="#"><li class="footerNavTab-btn">four</li></a>
-          </ul>
-      </div>
-      
     </div>
-
     <div class="row">
         <p class="footerCopyrightText">Copyright: Kyle Becker, 2019</p>
     </div>
-    
   </div>
 </footer>
 
